@@ -1,3 +1,6 @@
+# twg-react-project-template
+A template to make React projects based on [TWG's React project structure](https://github.com/twg/react-guidelines/blob/master/guidelines/project-structure.md).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
