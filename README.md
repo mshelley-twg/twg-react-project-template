@@ -35,3 +35,36 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Import Order
+For consistency, when importing files, please group packages by:
+* React
+* External npm packages
+* External components
+* Common
+* Core
+* Relative CSS
+* Relative JS
+
+For readability, it may help to add a line break between groups.
+
+Then, sort alphabetically by `from` path.
+
+For example:
+
+```js
+// File: core/Profile/Profile.js
+
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
+import ProgressBar from 'react-bootstrap/ProgressBar'
+
+import { Card } from 'common/components'
+import { Settings } from 'core/Settings'
+
+import styles from './Profile.module.scss'
+import { ProfileHeader } from './ProfileHeader'
+
+// ...
+```
